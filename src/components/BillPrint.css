@@ -1,0 +1,131 @@
+/* Screen Styles */
+.bill-print {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+}
+
+.logo-img {
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.bill-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.bill-header h1 {
+  color: #D4AF37;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.shop-tagline {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.shop-info {
+  margin: 3px 0;
+  font-size: 12px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #D4AF37;
+  margin: 10px 0;
+}
+
+.bill-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 12px;
+}
+
+.items-table th {
+  background-color: #D4AF37;
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+
+.items-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.calculation-summary {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.grand-total {
+  font-weight: bold;
+  border-top: 1px solid #D4AF37;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.payment-section {
+  background-color: #f0f8ff;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.bill-footer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 11px;
+  color: #666;
+}
+
+.print-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 25px;
+  background-color: #D4AF37;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Print-specific hiding */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
